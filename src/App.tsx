@@ -4,6 +4,7 @@ import Example from "./Example";
 import ExampleModal from "./ExampleModal";
 import ExampleOverlay from "./ExampleOverlay";
 import ExampleFilePond from "./ExampleFilePond";
+import ExampleVideo from "./ExampleVideo";
 
 import "./App.css";
 
@@ -24,6 +25,9 @@ function App() {
               <Link to="/overlay">Overlay</Link>
             </li>
             <li>
+              <Link to="/video">Video</Link>
+            </li>
+            <li>
               <Link to="/filepond">FilePond</Link>
             </li>
           </ul>
@@ -34,6 +38,9 @@ function App() {
           </Route>
           <Route path="/overlay">
             <ExampleOverlay />
+          </Route>
+          <Route path="/video">
+            <ExampleVideo />
           </Route>
           <Route path="/filepond">
             <ExampleFilePond />
